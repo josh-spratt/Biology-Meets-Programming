@@ -1,5 +1,5 @@
 def ApproximatePatternMatching(Text, Pattern, d):
-    positions = [] # initializing list of positions
+    positions = []  # initializing list of positions
     for i in range(len(Text)-len(Pattern)+1):
         if HammingDistance(Text[i:i+len(Pattern)], Pattern) <= d:
             positions.append(i)
@@ -18,8 +18,4 @@ Text = 'CGCCCGAATCCAGAACGCATTCCCATATTTCGGGACCACTGGCCTCCACGGTACGGACGTCAATCAAAT'
 Pattern = 'ATTCTGGA'
 d = 3
 #ApproximatePatternMatching = ApproximatePatternMatching(Text, Pattern, d)
-#print(ApproximatePatternMatching)
-p = 'CTTGAAGTGGACCTCTAGTTCCTCTACAAAGAACAGGTTGACCTGTCGCGAAG'
-q = 'ATGCCTTACCTAGATGCAATGACGGACGTATTCCTTTTGCCTCAACGGCTCCT'
-HammingDistance = HammingDistance(p,q)
-print(HammingDistance)
+# print(ApproximatePatternMatching)
