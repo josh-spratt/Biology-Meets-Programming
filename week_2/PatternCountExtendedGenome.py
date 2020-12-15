@@ -60,6 +60,19 @@ def MinimumSkew(Genome):
         count += 1
     return positions
 
-Genome = 'CATGGGCATCGGCCATACGCC'
+
+def MaximumSkew(Genome):
+    array = SkewArray(Genome)
+    positions = []
+    count = 0
+    max_array = max(array)
+    for i in array:
+        if i == max_array:
+            positions.append(count)
+        count += 1
+    return positions
+
+Genome = 'CATTCCAGTACTTCGATGATGGCGTGAAGA'
+
 print(SkewArray(Genome))
-print(MinimumSkew(Genome))
+print(MaximumSkew(Genome))

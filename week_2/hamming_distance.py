@@ -17,5 +17,9 @@ def HammingDistance(p, q):
 Text = 'CGCCCGAATCCAGAACGCATTCCCATATTTCGGGACCACTGGCCTCCACGGTACGGACGTCAATCAAAT'
 Pattern = 'ATTCTGGA'
 d = 3
-ApproximatePatternMatching = ApproximatePatternMatching(Text, Pattern, d)
-print(ApproximatePatternMatching)
+#ApproximatePatternMatching = ApproximatePatternMatching(Text, Pattern, d)
+#print(ApproximatePatternMatching)
+p = 'CTTGAAGTGGACCTCTAGTTCCTCTACAAAGAACAGGTTGACCTGTCGCGAAG'
+q = 'ATGCCTTACCTAGATGCAATGACGGACGTATTCCTTTTGCCTCAACGGCTCCT'
+HammingDistance = HammingDistance(p,q)
+print(HammingDistance)
